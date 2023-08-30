@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
 
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-group {
+      margin-bottom: 10px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #666;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+    }
+
+    .btn-secondary {
+      background-color: #6c757d;
+    }
+
+    .btn-success {
+      background-color: #28a745;
+    }
+
+    .btn-danger {
+      background-color: #dc3545;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculator</h1>
+  <div class="container">
+    <div class="input-group">
+      <label for="num1">Num1:</label>
+      <input type="number" id="num1">
+    </div>
+    <div class="input-group">
+      <label for="num2">Num2:</label>
+      <input type="number" id="num2">
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-primary" onclick="add()">Add</button>
+      <button class="btn btn-secondary" onclick="subtract()">Subtract</button>
+      <button class="btn btn-success" onclick="multiply()">Multiply</button>
+      <button class="btn btn-danger" onclick="divide()">Divide</button>
+    </div>
+    <div class="result">
+      Result: <span id="result">-</span>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
